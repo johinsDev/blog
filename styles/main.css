@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto+Slab:400,500,700|Roboto:400,500,700,900&display=swap");
+
+a {
+  @apply no-underline inline text-black;
+}
+
+header {
+  @apply w-full h-40 flex flex-col;
+}
+
+.container {
+  @apply w-11/12 mx-auto;
+}
+
+#__next {
+  @apply min-h-screen flex flex-col;
+}
