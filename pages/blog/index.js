@@ -7,10 +7,14 @@ const Blog = () => (
     <section className="w-full bg-secondary py-10">
       <div className="container">
         <h3 className="mb-4 font-bold border-b text-xl">Noticias</h3>
-        <div className="flex">
-          <img src="main-news-img.png" alt="image-blog" className="w-1/2" />
+        <div className="flex flex-col md:flex-row">
+          <img
+            src="main-news-img.png"
+            alt="image-blog"
+            className="w-full md:w-1/2"
+          />
 
-          <div className="flex flex-col w-1/2 pl-10">
+          <div className="flex flex-col pl-0 pt-5 md:pt-0 md:pl-10">
             <h2 className="font-bold text-2xl mb-4">Titulo del blogpost</h2>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -38,7 +42,10 @@ const Blog = () => (
       <div className="flex flex-wrap -mx-4 px-8">
         {new Array(6).fill(0).map((_, index) => {
           return (
-            <article className="w-1/3 px-4 flex flex-col mb-10" key={index}>
+            <article
+              className="w-full px-4 flex flex-col mb-10 md:w-1/2 lg:w-1/3"
+              key={index}
+            >
               <img src={`post-${Math.ceil((index + 1) / 2)}.png`} alt="" />
               <h4 className="my-4 font-semibold">Titulo del post</h4>
               <p className="text-justify">

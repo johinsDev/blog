@@ -16,6 +16,12 @@ header {
   @apply w-11/12 mx-auto;
 }
 
+@media (min-width: 768px) {
+  .md\:container {
+    @apply w-11/12 mx-auto;
+  }
+}
+
 #__next {
   @apply min-h-screen flex flex-col;
 }
